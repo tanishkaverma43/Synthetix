@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
 const Player = dynamic(
@@ -8,16 +8,17 @@ const Player = dynamic(
 );
 
 const Form = () => {
-  const playerRef = useRef<any>(null);
-
   const [submitted, setSubmitted] = useState<boolean>(false);
+  const [shouldPause, setShouldPause] = useState<boolean>(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      playerRef?.current?.pause();
-    }, 2000);
+    if (submitted) {
+      const timer = setTimeout(() => {
+        setShouldPause(true);
+      }, 2000);
 
-    return () => clearTimeout(timer);
+      return () => clearTimeout(timer);
+    }
   }, [submitted]);
 
   return (
@@ -27,8 +28,8 @@ const Form = () => {
           <Player
             src="https://lottie.host/cdf2112a-f1d1-4c60-93f5-bb7a15cf867a/mA5Gs35pNH.json"
             className="w-[340px] pt-[120px]"
-            autoplay
-            ref={playerRef}
+            autoplay={!shouldPause}
+            loop={false}
           />
         </div>
       ) : (
