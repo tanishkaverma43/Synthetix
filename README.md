@@ -9,7 +9,7 @@
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
-[🌐 Live Demo](https://synthetix-iota.vercel.app/) • [📖 Documentation](#) • [🐛 Report Bug](#) • [💡 Request Feature](#)
+[🌐 Live Demo](https://synthetix-app.vercel.app/) • [📖 Documentation](#) • [🐛 Report Bug](#) • [💡 Request Feature](#)
 
 </div>
 
@@ -62,7 +62,7 @@
 
 </div>
 
-**[🌐 View Live Demo](https://synthetix-iota.vercel.app/)**
+**[🌐 View Live Demo](https://synthetix-app.vercel.app/)**
 
 ---
 
