@@ -93,7 +93,7 @@ const Footer = async () => {
           >
             Tanishka Verma
           </a>
-          — @2024, SYNTHETIX
+          — @2025, SYNTHETIX
         </p>
       </div>
     </footer>
